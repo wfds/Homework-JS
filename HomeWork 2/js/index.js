@@ -22,6 +22,7 @@ console.log({} === {})
 const evenNumber = Number(window.prompt("evenNumber", ""));
 window.alert(evenNumber % 2 === 0)
 
+
 const oddNumber = Number(window.prompt("oddNumber", ""));
 window.alert(oddNumber % 2 !== 0)
 
