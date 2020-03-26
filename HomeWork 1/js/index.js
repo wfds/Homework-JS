@@ -29,7 +29,7 @@ console.log(typeof numbersOfSchool)
 
 
 
-const student ={
+const student = {
     name: "Den",
     surname: "Medvedskyi",
     isActive: true
@@ -50,4 +50,4 @@ console.log(numbers10["0"])
 console.log(numbers10["9"])
 
 
-console.log(student)
+console.log(`student: ${student.name} ${student.surname}, isActive: ${student.isActive}`)
