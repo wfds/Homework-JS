@@ -18,11 +18,13 @@ console.log(17 === true)
 console.log("17" === true)
 console.log({} === {})
 
+
 const evenNumber = Number(window.prompt("evenNumber", ""));
 window.alert(evenNumber % 2 === 0)
 
 const oddNumber = Number(window.prompt("oddNumber", ""));
 window.alert(oddNumber % 2 !== 0)
+
 
 let cd = 12
 cd -= 5
@@ -40,10 +42,10 @@ console.log(-a)
 console.log(Number(a))
 console.log("100" / "1")
 
+
 let q = 3
 let w = 4
 console.log((q **= 2) - (w **= 3))
-
 
 
 let nn = Number(window.prompt("typeANumber", ""));
@@ -59,6 +61,7 @@ const n = Number(window.prompt("sideOfTheTriangle", ""));
 const h = Number(window.prompt("sideOfTheTriangle", ""));
 const g = Number(window.prompt("sideOfTheTriangle", ""));
 window.alert(n + h > g, h + g > n, n + g > h)
+
 
 let l = Number(window.prompt("typeAFirstNumber", ""));
 let k = Number(window.prompt("typeASecondNumber", ""));
