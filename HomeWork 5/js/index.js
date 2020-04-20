@@ -109,34 +109,54 @@ if (a.hasOwnProperty("age")) {
 
 
           for (var i = 0, length = persons.length; i < length; i++) {
-            console.log('name = ' + persons[i]['name'] + ', surname = ' + persons[i]['surname']);
+            console.log(persons[i]['name'] + ' ' + persons[i]['surname']);
           }
 
 
 
 
+
+
+          //loop of loop of values не совсем понятно зачем использовать вложенный цикл,если цикл из предыдущего задания уже выводит все значения из обьектов
           for (var i = 0, length = persons.length; i < length; i++) {
-            for( var pers in a,b,c) {
-            console.log(a[pers])}
+            console.log(Object.values(persons[i]));
           }
 
 
 
 
 
-          
+
+
+          var i = 0
+for ( length = persons.length; i < length; i++) {
+            persons[i].fullName = persons[i].name + ' ' + persons[i].surname + ' ' + (persons[i].fatherName || ' ');
+    console.log(persons[i].fullName)
+          }
 
 
 
 
 
 
+JSON.stringify(persons)
+
+
+
+
+JSON.parse('{"name":"Olixer","surname":"Wood","age":15,"fullName":"Olixer Wood  "}')
 
 
 
 
 
 
-
-
-
+var str = "<table border='1'>"
+for ( let i  = 0, length = persons.length; i < length; i++){
+    for(let key in persons[i]){
+    str += `<tr><td>${key}</td><td>${persons[i][key]}</td></tr>`
+}
+}
+str += "</table>"
+console.log(str)
+document.write(str)
